@@ -28,19 +28,25 @@
   }
   
   #blog {
-    top: 80px;
+    top: 75px;
     background-color: grey; /* Grey*/
   }
   
   #playing{
-    top: 140px;
+    top: 130px;
     background-color: grey; /* Grey*/
   }
   
   #subscribe {
-    top: 200px;
+    top: 185px;
     background-color: grey; /* Grey*/
   }
+
+  #game {
+    top: 240px;
+    background-color: grey; /* Grey*/
+  }
+
 
   /* Style the tab */
 .tab {
