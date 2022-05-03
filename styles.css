@@ -1,0 +1,296 @@
+*{
+  border:0px;
+  padding:0px;
+  
+}
+
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    top: 20px;
+    background-color: grey; /* Grey*/
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: grey; /* Grey*/
+  }
+  
+  #playing{
+    top: 140px;
+    background-color: grey; /* Grey*/
+  }
+  
+  #subscribe {
+    top: 200px;
+    background-color: grey; /* Grey*/
+  }
+
+  /* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* Chat containers */
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.container img.right {
+  float: right;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #999;
+}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+img{
+  width: 100%;
+  height: 110%;
+  margin-top: -75px;
+  position: relative;
+  right: 800;
+}
+
+.animal_sq {
+  width: 170px;
+  height: 200px;
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px 20px;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+}
+
+.animal_desc {
+  font-size: 14px;
+  height: 150px;
+}
+
+.Birds {
+  background-image: url(https://static.scientificamerican.com/sciam/cache/file/7A715AD8-449D-4B5A-ABA2C5D92D9B5A21_source.png);
+}
+
+.Mammals{
+  background-image: url(https://images.immediate.co.uk/production/volatile/sites/23/2020/01/SupriyaDam_Tiger_04-9368aaa.jpg?quality=90&crop=1px,170px,731px,487px&resize=620,413);
+}
+
+.Insects{
+  background-image: url(https://images2.minutemediacdn.com/image/upload/c_crop,h_2042,w_3036,x_0,y_73/v1554752078/shape/mentalfloss/istock-483749258.jpg?itok=jW8WsgSU);
+}
+
+.Amphibians{
+  background-image: url(https://i.natgeofe.com/n/1abfa9bc-c300-4ac3-adf0-76002c030f0f/NationalGeographic_1380992_3x4.jpg);
+}
+
+.Fishes{
+  background-image: url(https://cdn.mos.cms.futurecdn.net/RY2EpSo74hvYXyAVpTN2Gg.jpg);
+}
+
+.Reptiles{
+  background-image: url(https://i.natgeofe.com/n/f80a6834-c7d0-4e93-b113-ae708652a527/snakes_01_square.jpg);
+}
+
+.content {
+  position: absolute; /* Position the background text */
+  bottom: 0px; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: black; /* Grey text */
+  width: 100%; /* Full width */
+  height: 100%; /*Full height*/
+  padding-top: 450px; /* Some padding */
+}
+
+.carousel-item{
+  height: 100%;
+}
+
+.tabcontent img{
+  height: 100px; width: 100px;
+}
+
+.London{
+  width: 400px;
+  height: 275px;
+  border: 2px black;
+}
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  position: relative;
+}
+
+body{
+  background-color: black;
+  color: antiquewhite;
+}
+
+.form{
+  background-color: black;
+}
+
+textarea{
+  border: white;
+  background-color: black;
+  color: white;
+}
+
